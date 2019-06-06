@@ -1,3 +1,9 @@
-spring:
-  application:
-    name: service-zuul
+zuul:
+  routes:
+    myzuul:
+      path: /myzuul/**
+      serviceId: eureka-feign-service-b1
+      # 开启cookie
+      sensitiveHeaders:
+      # 简洁写法  eureka-feign-service-b1: /myzuul/**
+  # ignored-patterns: /myzuul/get
