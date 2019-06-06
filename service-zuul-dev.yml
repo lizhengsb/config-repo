@@ -1,1 +1,3 @@
-name: lizheng
+spring:
+  application:
+    name: service-zuul
