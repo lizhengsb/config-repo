@@ -1,7 +1,7 @@
 zuul:
   routes:
     mzuul:
-      path: /mzuul/**
+      path: /mazuul/**
       serviceId: eureka-feign-service-b1
       # 开启cookie
       sensitiveHeaders:
