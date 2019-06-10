@@ -1,7 +1,7 @@
 zuul:
   routes:
     eureka-feign-service-b1:
-      path: /eureka-feign-service-b1/**
+      path: /mazuul/**
       serviceId: eureka-feign-service-b1
       # 开启cookie
       sensitiveHeaders:
@@ -10,8 +10,8 @@ zuul:
   ratelimit:
     enabled: true
     respository: REDIS
-    polices: 
-      eureka-feign-service-b1:
+    behind-proxy: true
+    default-policy:
       limit: 10
       quota: 4
       refresh-interval: 5
