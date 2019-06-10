@@ -16,4 +16,4 @@ zuul:
       quota: 4
       refresh-interval: 5
       type:
-        - ORGIN
+        - url
