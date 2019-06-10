@@ -7,3 +7,13 @@ zuul:
       sensitiveHeaders:
       # 简洁写法  eureka-feign-service-b1: /myzuul/**
   # ignored-patterns: /myzuul/get
+  ratelimit:
+    enabled: true
+    respository: REDIS
+    behind-proxy: true
+    default-proxy:
+      limit: 10
+      quota: 4
+      refresh-interval: 5
+      type:
+        - url
