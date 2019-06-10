@@ -10,10 +10,10 @@ zuul:
   ratelimit:
     enabled: true
     respository: REDIS
-    behind-proxy: true
-    default-proxy:
+    polices: 
+      mzuul:
       limit: 10
       quota: 4
       refresh-interval: 5
       type:
-        - url
+        - ORGIN
