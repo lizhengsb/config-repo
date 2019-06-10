@@ -6,7 +6,7 @@ zuul:
       # 开启cookie
       sensitiveHeaders:
       # 简洁写法   eureka-feign-service-b1: /myzuul/**
-  # ignored-patterns: /myzuul/get
+  ignored-patterns: /mazuul/get
   ratelimit:
     enabled: true
     respository: REDIS
